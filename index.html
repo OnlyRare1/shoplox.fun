@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Aura Supplies | Official Shoplox Hub</title>
+    
+    <script>
+    !function (w, d, t) {
+      w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
+    var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
+    ;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+    
+      // YOUR UNIQUE PIXEL ID
+      ttq.load('D7F2BF3C77U61Q63QT20');
+      ttq.page();
+    }(window, document, 'ttq');
+    </script>
+    <style>
+        /* CSS RESET & CORE STYLES */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #03001C;
+            color: white;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; /* Keeps particles inside */
+            position: relative;
+        }
+
+        /* ANIMATED NEON BACKGROUND EFFECT */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: 
+                radial-gradient(circle at 10% 10%, rgba(138, 43, 226, 0.3) 0%, transparent 40%),
+                radial-gradient(circle at 90% 90%, rgba(0, 255, 255, 0.2) 0%, transparent 40%);
+            animation: gradientShift 10s ease-in-out infinite alternate;
+            z-index: -2;
+        }
+
+        @keyframes gradientShift {
+            0% { transform: scale(1); opacity: 0.8; }
+            100% { transform: scale(1.2); opacity: 1; }
+        }
+
+        /* MAIN CONTENT CONTAINER */
+        .container {
+            text-align: center;
+            z-index: 10;
+            padding: 20px;
+            background: rgba(3, 0, 28, 0.6);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(138, 43, 226, 0.2);
+            box-shadow: 0 0 30px rgba(138, 43, 226, 0.3);
+        }
+
+        /* BRAINROT GLITCH TITLE */
+        .glitch-title {
+            font-size: 3rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: -2px;
+            position: relative;
+            color: #fff;
+            text-shadow: 0 0 10px #8A2BE2;
+            margin-bottom: 10px;
+            animation: glitch 3s infinite;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #a0a0a0;
+            margin-bottom: 40px;
+            font-weight: 300;
+        }
+
+        /* THE REDIRECT BUTTON */
+        .visit-btn {
+            display: inline-block;
+            padding: 18px 45px;
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-decoration: none;
+            color: #fff;
+            background: linear-gradient(45deg, #8A2BE2, #00C8FF);
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(138, 43, 226, 0.5);
+            animation: pulse 2s infinite;
+        }
+
+        .visit-btn:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 8px 25px rgba(0, 200, 255, 0.7);
+        }
+
+        /* FLOATING PARTICLE ANIMATION */
+        .particles {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .particle {
+            position: absolute;
+            opacity: 0.7;
+            animation: floatParticle linear infinite;
+        }
+
+        /* KEYFRAMES */
+        @keyframes glitch {
+            0% { text-shadow: 0 0 10px #8A2BE2; }
+            2% { text-shadow: 2px 0 0 #ff00c1, -2px 0 0 #00fff9; }
+            4% { text-shadow: 0 0 10px #8A2BE2; }
+            50% { text-shadow: 0 0 10px #8A2BE2; transform: rotate(0deg); }
+            52% { transform: rotate(1deg) scale(1.02); }
+            54% { transform: rotate(0deg) scale(1); }
+            100% { text-shadow: 0 0 10px #8A2BE2; }
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 5px 20px rgba(138, 43, 226, 0.5); }
+            50% { box-shadow: 0 5px 40px rgba(0, 200, 255, 0.8); }
+            100% { box-shadow: 0 5px 20px rgba(138, 43, 226, 0.5); }
+        }
+
+        @keyframes floatParticle {
+            0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+            10% { opacity: 0.7; }
+            90% { opacity: 0.7; }
+            100% { transform: translateY(-20vh) rotate(360deg); opacity: 0; }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="particles" id="particleContainer"></div>
+
+    <div class="container">
+        <h1 class="glitch-title">MAX AURA ACTIVATED</h1>
+        <p class="subtitle">Secure the rarest Roblox drops before they are cooked 💀🔥</p>
+        
+        <a href="https://shoplox.fun" class="visit-btn" id="redirectBtn">VISIT WEBSITE</a>
+    </div>
+
+    <script>
+        // REDIRECT AND OPTIONAL EXTRA TRACKING
+        const redirectBtn = document.getElementById('redirectBtn');
+        const targetUrl = "https://shoplox.fun";
+
+        redirectBtn.addEventListener('click', (e) => {
+            // Optional: If you wanted to track specific *clicks* manually, you would add it here before the redirect.
+            // Example: ttq.track('ClickButton', { content_name: 'Visit Website' });
+            
+            // Standard behavior: The browser follows the link in the <a> tag.
+        });
+
+        // GENERATE FLOATING PARTICLES (Roblox/Brainrot style emojis)
+        const container = document.getElementById('particleContainer');
+        const emojis = ['💀', '🔥', '🧠', '💎', '👾', '🚀'];
+
+        function createParticle() {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particle.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+            
+            // Randomize position and animation properties
+            particle.style.left = Math.random() * 100 + 'vw';
+            particle.style.fontSize = Math.random() * 20 + 20 + 'px';
+            particle.style.animationDuration = Math.random() * 10 + 5 + 's'; // 5 to 15 seconds
+            
+            container.appendChild(particle);
+
+            // Remove particle after animation ends to save memory
+            setTimeout(() => {
+                particle.remove();
+            }, 15000);
+        }
+
+        // Create particles periodically
+        setInterval(createParticle, 300); // New particle every 300ms
+
+    </script>
+</body>
+</html>
